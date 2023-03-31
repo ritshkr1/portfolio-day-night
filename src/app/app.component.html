@@ -1,1 +1,32 @@
-
+<html lang="en" [attr.data-bs-theme]="theme">
+  <body>
+    <div class="navbar d-flex flex-row-reverse">
+      <div class="form-check form-switch me-3">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          name="theme"
+          id="flexSwitchCheckDefault"
+          [(ngModel)]="isDark"
+          (change)="getTheme()"
+        />
+        <label [class]="sunMoon" for="flexSwitchCheckDefault"> </label>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col p-5">
+          <h1
+            class="text-end fw-bold inc_font"
+            *ngFor="let body of bodyText; let i = index"
+            (mouseover)="getValue($event, i)"
+            (mouseout)="getValue($event, i)"
+          >
+            {{ body }}
+          </h1>
+        </div>
+        <div class="col"></div>
+      </div>
+    </div>
+  </body>
+</html>

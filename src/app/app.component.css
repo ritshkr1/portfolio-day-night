@@ -1,4 +1,12 @@
-*{
-  height: 600px;
+body{
+  height: 100%;
 }
+.inc_font{
+  font-size: 9rem;
+  transition: transform 1s;
+}
+.inc_font:hover{
+  transform: translateX(100px);
+}
+
 
