@@ -1,0 +1,10 @@
+body {
+  height: 100%;
+}
+.inc_font {
+  font-size: 9rem;
+  transition: transform 0.5s;
+}
+.inc_font:hover {
+  transform: translateX(75px);
+}
