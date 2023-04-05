@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   themeTitle = this.theme.toUpperCase();
   sunMoon = 'bi bi-brightness-high';
   isDark = false;
-  bodyText = ['Hello', 'I am', 'Ritesh'];
+  bodyText = ['Hello.', 'I am', 'Ritesh'];
   isOpenLink: boolean = false;
   ngOnInit(): void {}
   getTheme() {

@@ -7,6 +7,8 @@ import { WorkComponent } from './work/work.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DatePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -16,8 +18,8 @@ import { HomeComponent } from './home/home.component';
     ContactComponent,
     HomeComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
-  providers: [],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, BrowserAnimationsModule,],
+  providers: [DatePipe],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -6,5 +6,5 @@ body {
   transition: transform 0.5s;
 }
 .inc_font:hover {
-  transform: translateX(75px);
+  transform: translateX(125px);
 }
