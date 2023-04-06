@@ -1,10 +1,7 @@
-
 <html lang="en" [attr.data-bs-theme]="theme">
-  <body >
+  <body>
     <div class="navbar d-flex flex-row-reverse">
-        
       <div class="form-check form-switch me-3">
-        
         <input
           class="form-check-input"
           type="checkbox"
@@ -14,16 +11,14 @@
           (change)="getTheme()"
         />
         <label [class]="sunMoon" for="flexSwitchCheckDefault"> </label>
-
-        
       </div>
-      <a class="text-reset ms-2"
-              routerLink=""
-              style="text-decoration: none"
-             *ngIf="isTrue()"
-              
-              ><i class="bi bi-house-door me-1"></i>Home</a
-            >
+      <a
+        class="text-reset ms-2"
+        routerLink=""
+        style="text-decoration: none"
+        *ngIf="isTrue()"
+        >Ritesh</a
+      >
     </div>
     <router-outlet></router-outlet>
   </body>

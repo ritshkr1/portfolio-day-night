@@ -8,3 +8,17 @@ body {
 .inc_font:hover {
   transform: translateX(125px);
 }
+
+.zoom-in-out-box {
+
+  animation: zoom-in 2s ease ;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(1.12, 1.12);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
