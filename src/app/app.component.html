@@ -1,6 +1,13 @@
 <html lang="en" [attr.data-bs-theme]="theme">
   <body>
-    <div class="navbar d-flex flex-row-reverse">
+    <div class="navbar justify-content-end">
+      <a
+        class="text-reset me-3 portfolio font-weight-bold"
+        routerLink=""
+        style="text-decoration: none"
+        *ngIf="isTrue()"
+        >ritesh.</a
+      >
       <div class="form-check form-switch me-3">
         <input
           class="form-check-input"
@@ -12,13 +19,6 @@
         />
         <label [class]="sunMoon" for="flexSwitchCheckDefault"> </label>
       </div>
-      <a
-        class="text-reset ms-2"
-        routerLink=""
-        style="text-decoration: none"
-        *ngIf="isTrue()"
-        >Ritesh</a
-      >
     </div>
     <router-outlet></router-outlet>
   </body>

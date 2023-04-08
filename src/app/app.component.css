@@ -1,0 +1,10 @@
+
+.portfolio{
+  transition: transform .5s;
+}
+.portfolio:hover{
+  transform: translateX(-15px);
+}
+.portfolio:hover::after{
+  content: "kumar";
+}

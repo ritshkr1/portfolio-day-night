@@ -1,16 +1,28 @@
 <div class="container" *ngIf="!isOpenLink">
   <div class="row">
     <div class="col p-5">
-      <h1 class="text-end fw-bold inc_font" *ngFor="let body of bodyText; let i = index" (mouseover)="getValue($event, i)"
-        (mouseout)="getValue($event, i)">
-        <a class="text-reset" routerLink="/{{ body.toLowerCase() }}" style="text-decoration: none"
-          (click)="isOpenLink = true">{{ body }}</a>
+      <h1
+        class="text-end fw-bold inc_font"
+        *ngFor="let body of bodyText; let i = index"
+        [ngStyle]="{ color: i !== 0 ? '#ea0f1e' : 'none' }"
+        (mouseover)="getValue($event, i)"
+        (mouseout)="getValue($event, i)"
+      >
+        <a
+          class="text-reset"
+          routerLink="/{{ body.toLowerCase() }}"
+          style="text-decoration: none"
+          (click)="isOpenLink = true"
+          >{{ body }}</a
+        >
       </h1>
-        </div>
+    </div>
     <div class="col zoom-in-out-box">
       <img
         src="https://images.unsplash.com/photo-1527239441953-caffd968d952?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-        class="rounded mx-auto d-block" alt="Responsive image" />
+        class="rounded mx-auto d-block"
+        alt="Responsive image"
+      />
     </div>
-    </div>
+  </div>
 </div>
