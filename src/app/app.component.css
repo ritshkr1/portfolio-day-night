@@ -1,6 +1,5 @@
-
 .portfolio{
-  transition: transform .5s;
+  transition: transform .3s;
 }
 .portfolio:hover{
   transform: translateX(-15px);
