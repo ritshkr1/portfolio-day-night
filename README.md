@@ -27,3 +27,14 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Personal Notes
+
+Angular website hosted in Github pages does not work if I refresh in any route:
+
+Edit your app-routing.module.ts and make sure useHash is set to true:
+
+@NgModule({
+imports: [RouterModule.forRoot(routes, { useHash: true })],
+exports: [RouterModule]
+})
