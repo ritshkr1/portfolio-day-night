@@ -3,10 +3,10 @@ body {
 }
 .inc_font {
   font-size: 9rem;
-  transition: transform 0.5s;
+  transition: transform 0.3s;
 }
 .inc_font:hover {
-  transform: translateX(125px);
+  transform: translateX(20px);
 }
 
 .zoom-in-out-box {

@@ -2,3 +2,32 @@
 .inc_font{
     font-size: 6rem;
 }
+.max-height{
+  font-size: 3rem;
+  font-weight: bold;
+}
+.div-height{
+  min-height: 100vh;
+}
+.body-title{
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 3vh;
+}
+
+.paragraphs{
+  font-size: 20px;
+  margin-bottom: 2vh;
+}
+.resume{
+  text-decoration: none;
+  color: #ea0f1e;
+  font-weight: bold;
+  margin-bottom: 5vh;
+  display: flex;
+  transition: transform 0.3s;
+}
+
+.resume:hover{
+  transform: translateX(15px);
+}
